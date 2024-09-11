@@ -1,0 +1,177 @@
+Welcome to Extrae 4.2.1
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: Intermediate files will be stored in /lustrefs/disk/home/trochana/hoomd-benchmarks/run/profiling/hoomd-profiling
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 4 tasks and 1 threads
+
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: x1001c0s0b1n0
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+Extrae: Temporal directory (/lustrefs/disk/home/trochana/hoomd-benchmarks/run/profiling/hoomd-profiling) is shared among processes.
+Extrae: Final directory (/lustrefs/disk/home/trochana/hoomd-benchmarks/run/profiling/hoomd-profiling) is shared among processes.
+Extrae: Successfully initiated with 4 tasks and 1 threads
+
+[x1001c0s0b0n1:122366] *** Process received signal ***
+[x1001c0s0b0n1:122366] Signal: Segmentation fault (11)
+[x1001c0s0b0n1:122366] Signal code: Address not mapped (1)
+[x1001c0s0b0n1:122366] Failing at address: 0x440000e8
+[x1001c0s0b0n1:122365] *** Process received signal ***
+[x1001c0s0b1n0:128052] *** Process received signal ***
+[x1001c0s0b1n0:128053] *** Process received signal ***
+[x1001c0s0b1n0:128052] Signal: Segmentation fault (11)
+[x1001c0s0b1n0:128052] Signal code: Address not mapped (1)
+[x1001c0s0b1n0:128052] Failing at address: 0x440000e8
+[x1001c0s0b1n0:128053] Signal: Segmentation fault (11)
+[x1001c0s0b1n0:128053] Signal code: Address not mapped (1)
+[x1001c0s0b1n0:128053] Failing at address: 0x440000e8
+[x1001c0s0b0n1:122365] Signal: Segmentation fault (11)
+[x1001c0s0b0n1:122365] Signal code: Address not mapped (1)
+[x1001c0s0b0n1:122365] Failing at address: 0x440000e8
+[x1001c0s0b1n0:128052] [ 0] /lib64/libpthread.so.0(+0x168c0)[0x7f229e5d78c0]
+[x1001c0s0b1n0:128053] [ 0] /lib64/libpthread.so.0(+0x168c0)[0x7fe095d6c8c0]
+[x1001c0s0b1n0:128053] [ 1] /lustrefs/disk/modules/easybuild/software/OpenMPI/openmpi-4.1.2/lib/libmpi.so.40(MPI_Comm_size+0x37)[0x7fe094f5bb07]
+[x1001c0s0b1n0:128053] [ 2] /home/trochana/app/bsc-tools/extrae/lib/libmpitrace.so(MPI_Comm_size_C_Wrapper+0x3e)[0x7fe095fdc99e]
+[x1001c0s0b1n0:128053] [ 3] /home/trochana/app/bsc-tools/extrae/lib/libmpitrace.so(MPI_Comm_size+0x7f)[0x7fe095fd35bf]
+[x1001c0s0b1n0:128053] [ 4] /home/trochana/local/env/hoomd-venv/lib/python3.12/site-packages/mpi4py/MPI.cpython-312-x86_64-linux-gnu.so(+0xe5e8e)[0x7fe08b830e8e]
+[x1001c0s0b1n0:128053] [ 5] /home/trochana/local/env/hoomd-venv/lib/python3.12/site-packages/mpi4py/MPI.cpython-312-x86_64-linux-gnu.so(+0x67be4)[0x7fe08b7b2be4]
+[x1001c0s0b1n0:128053] [ 6] python3(PyModule_ExecDef+0x66)[0x5eb4f6]
+[x1001c0s0b1n0:128053] [ 7] python3[0x5ef78c]
+[x1001c0s0b1n0:128053] [ 8] python3[0x548b7b]
+[x1001c0s0b1n0:128053] [ 9] python3(_PyEval_EvalFrameDefault+0x4d7a)[0x529d7a]
+[x1001c0s0b1n0:128053] [10] python3[0x549cf3]
+[x1001c0s0b1n0:128053] [11] python3(PyObject_CallMethodObjArgs+0x101)[0x5750e1]
+[x1001c0s0b1n0:128053] [12] python3(PyImport_ImportModuleLevelObject+0x8d4)[0x5746f4]
+[x1001c0s0b1n0:128053] [13] python3[0x5847a2]
+[x1001c0s0b1n0:128053] [14] python3[0x53e76e]
+[x1001c0s0b1n0:128053] [15] python3(_PyEval_EvalFrameDefault+0x4d7a)[0x529d7a]
+[x1001c0s0b1n0:128053] [16] python3[0x549cf3]
+[x1001c0s0b1n0:128053] [17] python3(PyObject_CallMethodObjArgs+0x101)[0x5750e1]
+[x1001c0s0b1n0:128053] [18] python3(PyImport_ImportModuleLevelObject+0xb38)[0x574958]
+[x1001c0s0b1n0:128053] [19] python3(_PyEval_EvalFrameDefault+0x73d5)[0x52c3d5]
+[x1001c0s0b1n0:128053] [20] python3(PyEval_EvalCode+0xae)[0x5e3c6e]
+[x1001c0s0b1n0:128053] [21] python3[0x608dd7]
+[x1001c0s0b1n0:128053] [22] python3[0x604577]
+[x1001c0s0b1n0:128053] [23] python3[0x61c1c2]
+[x1001c0s0b1n0:128053] [24] python3(_PyRun_SimpleFileObject+0x1b0)[0x61ba60]
+[x1001c0s0b1n0:128053] [25] python3(_PyRun_AnyFileObject+0x43)[0x61b7d3]
+[x1001c0s0b1n0:128053] [26] python3(Py_RunMain+0x303)[0x614253]
+[x1001c0s0b1n0:128053] [27] python3(Py_BytesMain+0x39)[0x5cad69]
+[x1001c0s0b1n0:128053] [28] /lib64/libc.so.6(__libc_start_main+0xef)[0x7fe0952432bd]
+[x1001c0s0b1n0:128053] [29] python3[0x5cab99]
+[x1001c0s0b1n0:128053] *** End of error message ***
+[x1001c0s0b1n0:128052] [ 1] /lustrefs/disk/modules/easybuild/software/OpenMPI/openmpi-4.1.2/lib/libmpi.so.40(MPI_Comm_size+0x37)[0x7f229d7c6b07]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [ 2] [ 0] /home/trochana/app/bsc-tools/extrae/lib/libmpitrace.so(MPI_Comm_size_C_Wrapper+0x3e)[0x7f229e84799e]
+/lib64/libpthread.so.0(+0x168c0)[0x7fb0047888c0]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [ 3] [ 1] /home/trochana/app/bsc-tools/extrae/lib/libmpitrace.so(MPI_Comm_size+0x7f)[0x7f229e83e5bf]
+/lustrefs/disk/modules/easybuild/software/OpenMPI/openmpi-4.1.2/lib/libmpi.so.40(MPI_Comm_size+0x37)[0x7fb003977b07]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [ 4] [ 2] /home/trochana/local/env/hoomd-venv/lib/python3.12/site-packages/mpi4py/MPI.cpython-312-x86_64-linux-gnu.so(+0xe5e8e)[0x7f229409be8e]
+/home/trochana/app/bsc-tools/extrae/lib/libmpitrace.so(MPI_Comm_size_C_Wrapper+0x3e)[0x7fb0049f899e]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [ 5] [ 3] /home/trochana/local/env/hoomd-venv/lib/python3.12/site-packages/mpi4py/MPI.cpython-312-x86_64-linux-gnu.so(+0x67be4)[0x7f229401dbe4]
+/home/trochana/app/bsc-tools/extrae/lib/libmpitrace.so(MPI_Comm_size+0x7f)[0x7fb0049ef5bf]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [ 6] [ 4] python3(PyModule_ExecDef+0x66)[0x5eb4f6]
+/home/trochana/local/env/hoomd-venv/lib/python3.12/site-packages/mpi4py/MPI.cpython-312-x86_64-linux-gnu.so(+0xe5e8e)[0x7faffa24ce8e]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [ 7] [ 5] python3[0x5ef78c]
+/home/trochana/local/env/hoomd-venv/lib/python3.12/site-packages/mpi4py/MPI.cpython-312-x86_64-linux-gnu.so(+0x67be4)[0x7faffa1cebe4]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [ 8] [ 6] python3[0x548b7b]
+python3(PyModule_ExecDef+0x66)[0x5eb4f6]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [ 9] [ 7] python3(_PyEval_EvalFrameDefault+0x4d7a)[0x529d7a]
+python3[0x5ef78c]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [10] [ 8] python3[0x549cf3]
+python3[0x548b7b]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [11] [ 9] python3(PyObject_CallMethodObjArgs+0x101)[0x5750e1]
+python3(_PyEval_EvalFrameDefault+0x4d7a)[0x529d7a]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [12] [10] python3(PyImport_ImportModuleLevelObject+0x8d4)[0x5746f4]
+python3[0x549cf3]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [13] [11] python3[0x5847a2]
+python3(PyObject_CallMethodObjArgs+0x101)[0x5750e1]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [14] [12] python3[0x53e76e]
+python3(PyImport_ImportModuleLevelObject+0x8d4)[0x5746f4]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [15] [13] python3(_PyEval_EvalFrameDefault+0x4d7a)[0x529d7a]
+python3[0x5847a2]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [16] [14] python3[0x549cf3]
+python3[0x53e76e]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [17] [15] python3(PyObject_CallMethodObjArgs+0x101)[0x5750e1]
+python3(_PyEval_EvalFrameDefault+0x4d7a)[0x529d7a]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [18] [16] python3(PyImport_ImportModuleLevelObject+0xb38)[0x574958]
+python3[0x549cf3]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [19] [17] python3(_PyEval_EvalFrameDefault+0x73d5)[0x52c3d5]
+python3(PyObject_CallMethodObjArgs+0x101)[0x5750e1]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [20] [18] python3(PyEval_EvalCode+0xae)[0x5e3c6e]
+python3(PyImport_ImportModuleLevelObject+0xb38)[0x574958]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [21] [19] python3[0x608dd7]
+python3(_PyEval_EvalFrameDefault+0x73d5)[0x52c3d5]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [22] [20] python3[0x604577]
+python3(PyEval_EvalCode+0xae)[0x5e3c6e]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [23] [21] python3[0x61c1c2]
+python3[0x608dd7]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [24] [22] python3(_PyRun_SimpleFileObject+0x1b0)[0x61ba60]
+python3[0x604577]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [25] [23] python3(_PyRun_AnyFileObject+0x43)[0x61b7d3]
+python3[0x61c1c2]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [26] [24] python3(Py_RunMain+0x303)[0x614253]
+python3(_PyRun_SimpleFileObject+0x1b0)[0x61ba60]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [27] [25] python3(Py_BytesMain+0x39)[0x5cad69]
+python3(_PyRun_AnyFileObject+0x43)[0x61b7d3]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [28] [26] /lib64/libc.so.6(__libc_start_main+0xef)[0x7f229daae2bd]
+python3(Py_RunMain+0x303)[0x614253]
+[x1001c0s0b1n0:128052] [x1001c0s0b0n1:122366] [29] [27] python3[0x5cab99]
+python3(Py_BytesMain+0x39)[0x5cad69]
+[x1001c0s0b1n0:128052] *** End of error message ***
+[x1001c0s0b0n1:122366] [28] /lib64/libc.so.6(__libc_start_main+0xef)[0x7fb003c5f2bd]
+[x1001c0s0b0n1:122366] [29] python3[0x5cab99]
+[x1001c0s0b0n1:122366] *** End of error message ***
+[x1001c0s0b0n1:122365] [ 0] /lib64/libpthread.so.0(+0x168c0)[0x7f3ca92b08c0]
+[x1001c0s0b0n1:122365] [ 1] /lustrefs/disk/modules/easybuild/software/OpenMPI/openmpi-4.1.2/lib/libmpi.so.40(MPI_Comm_size+0x37)[0x7f3ca849fb07]
+[x1001c0s0b0n1:122365] [ 2] /home/trochana/app/bsc-tools/extrae/lib/libmpitrace.so(MPI_Comm_size_C_Wrapper+0x3e)[0x7f3ca952099e]
+[x1001c0s0b0n1:122365] [ 3] /home/trochana/app/bsc-tools/extrae/lib/libmpitrace.so(MPI_Comm_size+0x7f)[0x7f3ca95175bf]
+[x1001c0s0b0n1:122365] [ 4] /home/trochana/local/env/hoomd-venv/lib/python3.12/site-packages/mpi4py/MPI.cpython-312-x86_64-linux-gnu.so(+0xe5e8e)[0x7f3c9ed74e8e]
+[x1001c0s0b0n1:122365] [ 5] /home/trochana/local/env/hoomd-venv/lib/python3.12/site-packages/mpi4py/MPI.cpython-312-x86_64-linux-gnu.so(+0x67be4)[0x7f3c9ecf6be4]
+[x1001c0s0b0n1:122365] [ 6] python3(PyModule_ExecDef+0x66)[0x5eb4f6]
+[x1001c0s0b0n1:122365] [ 7] python3[0x5ef78c]
+[x1001c0s0b0n1:122365] [ 8] python3[0x548b7b]
+[x1001c0s0b0n1:122365] [ 9] python3(_PyEval_EvalFrameDefault+0x4d7a)[0x529d7a]
+[x1001c0s0b0n1:122365] [10] python3[0x549cf3]
+[x1001c0s0b0n1:122365] [11] python3(PyObject_CallMethodObjArgs+0x101)[0x5750e1]
+[x1001c0s0b0n1:122365] [12] python3(PyImport_ImportModuleLevelObject+0x8d4)[0x5746f4]
+[x1001c0s0b0n1:122365] [13] python3[0x5847a2]
+[x1001c0s0b0n1:122365] [14] python3[0x53e76e]
+[x1001c0s0b0n1:122365] [15] python3(_PyEval_EvalFrameDefault+0x4d7a)[0x529d7a]
+[x1001c0s0b0n1:122365] [16] python3[0x549cf3]
+[x1001c0s0b0n1:122365] [17] python3(PyObject_CallMethodObjArgs+0x101)[0x5750e1]
+[x1001c0s0b0n1:122365] [18] python3(PyImport_ImportModuleLevelObject+0xb38)[0x574958]
+./trace.sh: line 10: 128052 Segmentation fault      $@
+[x1001c0s0b0n1:122365] --------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[19] python3(_PyEval_EvalFrameDefault+0x73d5)[0x52c3d5]
+./trace.sh: line 10: 122366 Segmentation fault      $@
+[x1001c0s0b0n1:122365] [20] python3(PyEval_EvalCode+0xae)[0x5e3c6e]
+[x1001c0s0b0n1:122365] [21] python3[0x608dd7]
+[x1001c0s0b0n1:122365] [22] python3[0x604577]
+[x1001c0s0b0n1:122365] [23] python3[0x61c1c2]
+[x1001c0s0b0n1:122365] [24] python3(_PyRun_SimpleFileObject+0x1b0)[0x61ba60]
+[x1001c0s0b0n1:122365] [25] python3(_PyRun_AnyFileObject+0x43)[0x61b7d3]
+[x1001c0s0b0n1:122365] [26] python3(Py_RunMain+0x303)[0x614253]
+[x1001c0s0b0n1:122365] [27] python3(Py_BytesMain+0x39)[0x5cad69]
+[x1001c0s0b0n1:122365] [28] /lib64/libc.so.6(__libc_start_main+0xef)[0x7f3ca87872bd]
+[x1001c0s0b0n1:122365] [29] python3[0x5cab99]
+[x1001c0s0b0n1:122365] *** End of error message ***
+./trace.sh: line 10: 128053 Segmentation fault      (core dumped) $@
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[50445,1],2]
+  Exit code:    139
+--------------------------------------------------------------------------
+[x1001c0s0b0n1:122333] 3 more processes have sent help message help-btl-vader.txt / xpmem-make-failed
+[x1001c0s0b0n1:122333] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
